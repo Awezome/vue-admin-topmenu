@@ -1,3 +1,19 @@
+## vue-admin-topmenu
+
+vue-admin-template 很赞，但是没有顶部菜单的参数，就自己依葫芦画瓢，搞了个项目里需要用到的 topmenu 版本。   
+主要改动是：  
+-- 加了 src/views/layout/components/Topbar  
+-- src/router/index.js 加了 realPath 参数，当是一级菜单就不用去找child
+-- 一点样式    
+-- 目前不支多三级以上的菜单
+  
+刚看vue，写得不好地方多指教。
+
+## Demo
+
+![demo](https://raw.githubusercontent.com/Awezome/vue-admin-topmenu/master/preview.png)
+
+
 # vue-admin-template
 
 > A minimal vue admin template with Element UI & axios & iconfont & permission control & lint
