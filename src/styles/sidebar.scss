@@ -3,8 +3,9 @@
   .main-container {
     min-height: 100%;
     transition: margin-left .28s;
-    margin-left: 180px;
+    margin-left: 0;
     position: relative;
+    background-color: #eee;
   }
   // 侧边栏
   .sidebar-container {
@@ -120,6 +121,44 @@
     .main-container,
     .sidebar-container {
       transition: none;
+    }
+  }
+
+  .topbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #304156;
+
+    .left-logo {
+      padding-left: 32px;
+      width: 180px;
+      text-shadow: 4px 4px 5px #666;
+      font-size:20px;
+      color:#eee;
+    }
+
+    .middle-menu {
+      .el-menu {
+        border-bottom: 0;
+      }
+      flex: 1;
+    }
+
+    .right-logout {
+      display: flex;
+      width: 130px;
+      align-items:center;
+      .logout-left{
+        img{
+          height: 34px;
+          border-radius: 50px;
+        }
+      }
+      .logout-right{
+        margin-left: 6px;
+      }
     }
   }
 }

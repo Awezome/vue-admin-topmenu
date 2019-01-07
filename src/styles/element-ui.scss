@@ -27,3 +27,19 @@
     }
   }
 }
+
+.el-row {
+  border-radius:4px;
+  background-color: #fff;
+  padding:20px;
+  margin-bottom: 6px;
+  -webkit-box-shadow:0 2px 12px 0 rgba(0,0,0,.1);
+  box-shadow:0 2px 12px 0 rgba(0,0,0,.1);
+}
+
+
+.el-form-item--mini.el-form-item, .el-form-item--small.el-form-item {
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
