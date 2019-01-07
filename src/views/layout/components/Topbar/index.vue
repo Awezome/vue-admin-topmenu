@@ -9,7 +9,7 @@
         active-text-color="#ffd04b"
         mode="horizontal">
         <template v-for="route in routes" v-if="!route.hidden">
-          <MenuItem v-if="!route.realPath" :key="route.path" :item="route" :base-path="route.path" />
+          <MenuItem v-if="!route.realPath" :key="route.path" :item="route" :base-path="route.path" >
           <el-menu-item v-if="route.realPath" :key="route.path" :index="route.path">
             <ItemLink :to="route.realPath" :key="route.name">
               <svg-icon :icon-class="route.meta.icon"/> {{ route.meta.title }}
